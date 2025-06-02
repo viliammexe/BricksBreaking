@@ -133,14 +133,14 @@ public class BricksBreakingController {
                 ));
 
             }
-            if(!field.wasDeleted) {
-                html.append(String.format(
-                        "<td><a class='clear-row-btn' href='/bricksbreaking/deleteRow?row=%d'></a></td>",
-                        row
-                ));
-            }else {
-                html.append(""); // prázdna bunka
-            }
+//            if(!field.wasDeleted) {
+//                html.append(String.format(
+//                        "<td><a class='clear-row-btn' href='/bricksbreaking/deleteRow?row=%d'></a></td>",
+//                        row
+//                ));
+//            }else {
+//                html.append(""); // prázdna bunka
+//            }
         }
 
             html.append("</tr>");
