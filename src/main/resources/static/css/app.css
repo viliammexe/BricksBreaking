@@ -1,0 +1,269 @@
+/* === Animované pozadie === */
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #111 0%, #000 100%);
+    animation: pulse 6s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        background: radial-gradient(circle, #111 0%, #000 100%);
+    }
+    100% {
+        background: radial-gradient(circle, #222 0%, #000 100%);
+    }
+}
+
+/* === Globálne nastavenie === */
+body {
+    margin: 0;
+    color: #fff;
+    font-family: 'Press Start 2P', monospace;
+    text-align: center;
+    padding: 30px;
+}
+
+/* === Kontajner === */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(20, 20, 20, 0.92);
+    border-radius: 16px;
+    box-shadow: 0 0 30px #00ffff88;
+    position: relative;
+    z-index: 1;
+}
+
+/* === Nadpis === */
+.title {
+    color: #00e6e6;
+    text-shadow: 0 0 10px #00ffff, 0 0 25px #00ffff;
+    font-size: 40px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* === Štatistiky === */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat .label {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.stat .value {
+    font-size: 18px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00e6e6;
+}
+
+/* === Herné pole === */
+.game-field {
+    margin: 30px 0;
+}
+
+.game-grid {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #000;
+}
+
+.game-grid td {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #222;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+
+/* === Tehly === */
+.brick {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brick:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+}
+
+/* Farby */
+.brick.red    { background-color: #ff4d4d; }
+.brick.blue   { background-color: #3399ff; }
+.brick.green  { background-color: #33cc99; }
+.brick.empty  {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Animácia zničenia */
+.brick.removing {
+    animation: destroyBrick 0.3s ease-out forwards;
+}
+
+@keyframes destroyBrick {
+    0%   { transform: scale(1);   opacity: 1; }
+    100% { transform: scale(0.3); opacity: 0; }
+}
+
+/* Klikateľné odkazy */
+.game-grid td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: transparent;
+}
+
+.game-grid td:hover {
+    outline: 2px solid #00ffff;
+    box-shadow: 0 0 8px #00ffff;
+}
+
+/* === Game Over sekcia === */
+.game-over {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px dashed #555;
+}
+
+/* === Formuláre === */
+.form-block {
+    margin: 20px 0;
+}
+
+textarea, input {
+    width: 80%;
+    padding: 10px;
+    font-family: 'Press Start 2P', monospace;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+}
+
+/* === Tlačidlá === */
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #00f0ff, #00c8cc);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+    font-family: 'Press Start 2P', monospace;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #00ffff, #00e6e6);
+}
+
+/* === Reštart tlačidlo === */
+.restart-btn {
+    margin-top: 30px;
+    background: #00cc66;
+    box-shadow: 0 0 10px #00ff99;
+    color: black;
+}
+
+/* === Tabuľky === */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #555;
+    padding: 8px;
+    font-size: 12px;
+}
+
+.styled-table th {
+    background-color: #222;
+    color: #00ffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===
+.bomb-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.bomb-button {
+    padding: 10px 20px;
+    background: #ff5c5c;
+    color: white;
+    font-family: 'Press Start 2P', monospace;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff9999;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.bomb-button:hover {
+    transform: scale(1.05);
+    background: #ff3333;
+    box-shadow: 0 0 12px #ff6666;
+}
+
+.undo-button {
+    background-color: #444;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', monospace;
+}
+ */

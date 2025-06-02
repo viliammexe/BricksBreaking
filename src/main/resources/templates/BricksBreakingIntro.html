@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Bricks Breaking</title>
+  <link rel="stylesheet" th:href="@{/css/intro.css}">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="logo">🧱 BRICKS BREAKING 🧱</div>
+
+<div class="intro-container">
+  <form th:action="@{/bricksbreaking/start}" method="post" class="start-form">
+    <label for="player">Meno hráča:</label>
+    <input type="text" id="player" name="player" required>
+
+    <label for="difficulty">Obtiažnosť:</label>
+    <select id="difficulty" name="difficulty">
+      <option value="4">Easy</option>
+      <option value="3" selected>Medium</option>
+      <option value="2">Hard</option>
+    </select>
+
+    <button type="submit" class="start-button">Začať hru</button>
+  </form>
+</div>
+
+</body>
+</html>

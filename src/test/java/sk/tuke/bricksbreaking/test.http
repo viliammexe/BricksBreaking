@@ -1,0 +1,60 @@
+###  GET – najlepšie skóre
+GET http://localhost:8080/api/score/BricksBreaking
+Accept: application/json
+
+###
+
+###  POST – pridanie skóre
+POST http://localhost:8080/api/score
+Content-Type: application/json
+
+{
+  "player": "restTester",
+  "game": "BricksBreaking",
+  "score": 999,
+  "playedOn": "2025-04-08T12:00:00"
+}
+
+###
+
+### GET – komentáre pre BricksBreaking
+GET http://localhost:8080/api/comment/BricksBreaking
+Accept: application/json
+
+###
+
+###  POST – pridanie komentára
+POST http://localhost:8080/api/comment
+Content-Type: application/json
+
+{
+  "player": "restTester",
+  "game": "BricksBreaking",
+  "comment": "REST testovanie je super!",
+  "commentedOn": "2025-04-08T12:05:00"
+}
+
+###
+
+### ️ GET – priemerný rating pre BricksBreaking
+GET http://localhost:8080/api/rating/BricksBreaking
+Accept: application/json
+
+###
+
+###  GET – hodnotenie hráča restTester
+GET http://localhost:8080/api/rating/BricksBreaking/restTester
+Accept: application/json
+
+###
+
+### ️ POST – nastavenie hodnotenia
+POST http://localhost:8080/api/rating
+Content-Type: application/json
+
+{
+  "player": "restTester",
+  "game": "BricksBreaking",
+  "rating": 4,
+  "ratedOn": "2025-04-08T12:10:00"
+}
