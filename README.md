@@ -26,9 +26,9 @@ BricksBreaking is a web game created in Java using the Spring Boot framework. Th
 ## 📦 Launch
 
 1. Clone the project:  
-   `git clone https://github.com/tvoje-username/bricksbreaking.git`
+   `git clone https://github.com/your-username/bricksbreaking.git`
 
-2. Open it in an IDE (e.g. IntelliJ) and run it as a Spring Boot application via "GameServer.java".
+2. Open it in an IDE (e.g. IntelliJ) and run it as a Spring Boot application via "GameStudioServer.java".
 
 3. The game will be available at:  
    `http://localhost:8080/bricksbreaking`
