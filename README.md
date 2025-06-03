@@ -1,20 +1,20 @@
-# 🧱 BricksBreaking – Java Web Game with Spring Boot
+# 🧱 BricksBreaking - Java Web Game with Spring Boot
 
-BricksBreaking je webová hra vytvorená v Jave pomocou Spring Boot frameworku. Cieľom hráča je odstraňovať skupiny farebných tehličiek, získať čo najvyššie skóre a využiť špeciálne schopnosti ako „magickú paličku“ alebo bombu.
+BricksBreaking is a web game created in Java using the Spring Boot framework. The player's goal is to remove groups of colored bricks, get the highest score and use special abilities like the "magic wand" or bomb.
 
-## 🎮 Funkcionalita
+## 🎮 Functionality
 
-- Plne funkčné herné pole s farebnými tehličkami
-- Odstraňovanie skupín tehličiek rovnakej farby
-- Magic Wand – možnosť zničiť samostatnú tehličku za penalizáciu
-- Bomba – odstráni celý riadok a stĺpec
-- Herný timer a skóre
-- Možnosť pridávať komentáre a hodnotenia
-- Ukladanie skóre, komentárov a hodnotení do databázy
-- Webové používateľské rozhranie s Thymeleaf a Bootstrapom
-- Spring Boot backend s podporou REST a JPA
+- Fully functional game board with colored bricks
+- Eliminate groups of bricks of the same color
+- Magic Wand - possibility to destroy a single brick for a penalty
+- Bomb - removes an entire row and column
+- Game timer and score
+- Possibility to add comments and ratings
+- Saving scores, comments and ratings to the database
+- Web UI with Thymeleaf and Bootstrap
+- Spring Boot backend with REST and JPA support
 
-## 🛠 Technológie
+## 🛠 Technology
 
 - Java 17
 - Spring Boot (MVC, Data JPA, Web)
@@ -23,16 +23,16 @@ BricksBreaking je webová hra vytvorená v Jave pomocou Spring Boot frameworku. 
 - PostgreSQL
 - HTML, CSS, JavaScript
 
-## 📦 Spustenie
+## 📦 Launch
 
-1. Naklonuj projekt:  
+1. Clone the project:  
    `git clone https://github.com/tvoje-username/bricksbreaking.git`
 
-2. Otvor v IDE (napr. IntelliJ) a spusti ako Spring Boot aplikáciu.
+2. Open it in an IDE (e.g. IntelliJ) and run it as a Spring Boot application via "GameServer.java".
 
-3. Hra bude dostupná na adrese:  
+3. The game will be available at:  
    `http://localhost:8080/bricksbreaking`
 
-## 🪪 Licencia
+## 🪪 License
 
-Tento projekt je dostupný pod licenciou [MIT](LICENSE).
+This project is available under the [MIT](LICENSE) license.
