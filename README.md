@@ -11,7 +11,7 @@ BricksBreaking is a web game created in Java using the Spring Boot framework. Th
 - Game timer and score
 - Possibility to add comments and ratings
 - Saving scores, comments and ratings to the database
-- Web UI with Thymeleaf and Bootstrap
+- Web UI with HTML and CSS
 - Spring Boot backend with REST and JPA support
 
 ## 🛠 Technology
@@ -19,7 +19,6 @@ BricksBreaking is a web game created in Java using the Spring Boot framework. Th
 - Java 17
 - Spring Boot (MVC, Data JPA, Web)
 - Thymeleaf
-- Bootstrap
 - PostgreSQL
 - HTML, CSS, JavaScript
 
